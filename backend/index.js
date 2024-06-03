@@ -13,7 +13,7 @@ app.use('/api/categories', categoryRoutes);
 sequelize.sync()
     .then(() => {
         app.listen(3000, () => {
-            console.log('Server is running in port 3000')
+            console.log('Server is running on port 3000')
         });
     })
     .catch(err => onslotchange.log(err));
