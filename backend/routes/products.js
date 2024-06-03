@@ -2,7 +2,6 @@ const express = require('express');
 const { Op } = require('sequelize');
 const Product = require('../models/product');
 const Category = require('../models/category');
-const { or } = require('../config/database');
 const router = express.Router();
 
 router.get('/', async (req, res) => {
