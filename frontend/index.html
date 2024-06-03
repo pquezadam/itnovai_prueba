@@ -7,8 +7,28 @@
 </head>
 <body>
     <header>
-        <h1>Ecommerce-Itnovai</h1>
-        <input type="text" id="search" placeholder="Busqueda...">
+        <div class="bg-primary py-1 text-center text-white text-uppercase py-1 header-offer"
+        >
+          Ecommerce-Itnovai
+        </div>
+        <section class="container py-3">
+            <div class="col-md-6 d-flex justify-content-center h-100 w-75">
+                <div class="row">
+                    <form id="form" class="text-center">
+                        <input
+                            class="form-control mb-3 text-center" 
+                            type="text" 
+                            id="search-input-b"
+                            oninput="validateInput()" 
+                            placeholder="Busqueda..."
+                            >
+                        <button class="btn btn-primary text-uppercase" type="submit">
+                            buscar
+                        </button>  
+                    </form>
+                </div>
+            </div>   
+        </section>
     </header>
     <main>
         <aside>
